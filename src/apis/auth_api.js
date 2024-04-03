@@ -1,6 +1,6 @@
 export default async function handleLogin(username, password) {
     try {
-      const response = await fetch('http://192.168.1.103:8083/users/login', {
+      const response = await fetch('http://192.168.1.12:8083/users/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

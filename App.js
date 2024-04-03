@@ -1,9 +1,9 @@
 import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
-import Index from '../pfe_front/src/navigation/Index';
+import Index from '../Frontend/src/navigation/Index';
 
 
-import {store} from '../pfe_front/src/state_mangm/Store';
+import {store} from '../Frontend/src/state_mangm/Store';
 import { Provider } from 'react-redux';
 
 

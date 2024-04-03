@@ -9,6 +9,7 @@ import User_tchat from '../screens/dashboards/user_dashboard/user_tchat';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Profile from '../screens/dashboards/user_dashboard/profile';
 import Settings from '../screens/dashboards/user_dashboard/settings';
+import App from '../screens/dashboards/user_dashboard/Texttovoice';
 const Stack=createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
@@ -56,6 +57,7 @@ const Index = () => {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen name="Texttovoice" component={ App} />
          <Stack.Screen name='settings' component={Settings}/>
         <Stack.Screen name="HomeTab" component={HomeTab} options={{ headerShown: false }} />
       </Stack.Navigator>
