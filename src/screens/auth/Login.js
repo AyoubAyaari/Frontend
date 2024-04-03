@@ -78,7 +78,7 @@ console.log('erreur en finger scanne');
         const roles=token_decode(token);
         
         dispatch(login({username,password,token,roles}))
-        navigation.navigate('HomeTab');
+        navigation.navigate('Texttovoice');
        
         }
 
@@ -117,6 +117,9 @@ console.log('erreur en finger scanne');
       </TouchableOpacity>
       <TouchableOpacity style={styles.button2} onPress={Loginwithfinger}>
         <Text style={styles.buttonText}>Login with finger </Text>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate('Inscrire')}>
+        <Text style={styles.linkText}>Sign Up</Text>
       </TouchableOpacity>
     </View>
   
@@ -162,7 +165,11 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     paddingHorizontal: 20,
     borderRadius: 5,
-    
+  },
+  linkText: {
+    fontSize: 16,
+    color: 'blue',
+    textDecorationLine: 'underline',
   },
   buttonText: {
     color: '#fff',
