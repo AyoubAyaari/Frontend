@@ -45,7 +45,7 @@ try
                                   
                           dispatch(login({username,password,token,roles}))
 
-                          navigation.navigate('Texttovoice');
+                          navigation.navigate('HomeTab');
               }
 
      }
@@ -78,7 +78,7 @@ console.log('erreur en finger scanne');
         const roles=token_decode(token);
         
         dispatch(login({username,password,token,roles}))
-        navigation.navigate('Texttovoice');
+        navigation.navigate('HomeTab');
        
         }
 

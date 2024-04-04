@@ -3,6 +3,7 @@ import { Image } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Login from '../screens/auth/Login' ;
+import DocumentScannerScreen from '../screens/DocumentScanner' ;
 import Inscrire from '../screens/auth/Inscrire' ;
 import Home_page from '../screens/homepage/home_page'
 import User_dashboard from '../screens/dashboards/user_dashboard/User_dashboard';
@@ -57,7 +58,9 @@ const Index = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+      
         <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen name="DocumentScanner" component={DocumentScannerScreen} />
         <Stack.Screen name="Inscrire" component={Inscrire} />
         <Stack.Screen name="Texttovoice" component={ App} />
          <Stack.Screen name='settings' component={Settings}/>
